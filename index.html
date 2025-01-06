@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dojo Community Calendar</title>
+   <style>
+      /* General body styling */
+      body {
+         font-family: 'Arial', sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f9f9f9;
+         color: #333;
+         text-align: center;
+      }
+
+      /* Logo styling */
+      .logo {
+         margin: 20px 0;
+         max-width: 300px; /* Adjust logo size */
+         width: 80%; /* Make it responsive */
+         height: auto;
+      }
+
+      /* Calendar container */
+      .calendar-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 20px auto;
+         padding: 20px;
+         background-color: #ffffff;
+         border-radius: 10px;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         max-width: 100%;
+         overflow: hidden; /* Ensures no overflow on mobile */
+      }
+
+      /* Responsive iframe styling */
+      iframe {
+         border: none;
+         border-radius: 8px;
+         width: 100%;
+         height: 400px; /* Adjust height for mobile */
+      }
+
+      /* Footer for additional context */
+      footer {
+         margin-top: 20px;
+         font-size: 0.9rem;
+         color: #666;
+      }
+
+      /* Media query for mobile view */
+      @media (max-width: 768px) {
+         .logo {
+            max-width: 200px; /* Smaller logo size on mobile */
+         }
+
+         .calendar-container {
+            padding: 10px;
+         }
+
+         iframe {
+            height: 300px; /* Smaller iframe height for mobile */
+         }
+
+         footer {
+            font-size: 0.8rem;
+         }
+      }
+
+      @media (max-width: 480px) {
+         .logo {
+            max-width: 150px; /* Even smaller logo for small devices */
+         }
+
+         iframe {
+            height: 250px; /* Further adjust iframe for very small screens */
+         }
+      }
+   </style>
+</head>
+<body>
+   <img class="logo" src="https://cdn.discordapp.com/attachments/1095524447127081040/1325351924685475851/Re_Chain-logolockup-full-color.png?ex=677c226a&is=677ad0ea&hm=cb5db610b69157fb822c4ea0b39fbc5733942741abc364168065ee2a7f0efb5e&" alt="Dojo Community Logo">
+   <div class="calendar-container">
+      <iframe 
+         src="https://calendar.google.com/calendar/embed?src=6b58273f75b22755c1cd36f477fc82c8f42f4d0e1b40cd6f0b6f44babc31c402%40group.calendar.google.com" 
+         style="border: 0" 
+         width="800" 
+         height="600" 
+         frameborder="0" 
+         scrolling="no">
+      </iframe>
+   </div>
+   <footer>
+      © 2025 Re:Chain Community. All rights reserved.
+   </footer>
+</body>
+</html>
